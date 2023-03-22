@@ -1,0 +1,13 @@
+<title>Academic Journal Predatory Checking System</title>
+<body>
+	<img src="../static/system_banner.png"  style="width:100%"/>
+	<p>Result: {{ answer }} ({{URL}})</p>
+	<p><a href="https://beallslist.net/standalone-journals" target="_blank">Beall's list</a>: {{ beall }}</p>
+	<p><a href="https://predatoryjournals.com/journals" target="_blank">Stop predatory Journal's list</a>: {{ spj }}</p>
+	<p><a href="http://s-quest.bihealth.org:3838/OAWhitelist" target="_blank">BIH QUEST Whitelist</a>: {{ bih }}</p>
+	<form method="post" action="/result">
+			<button type="submit">Continue</button>
+	</form>
+	<p>The results are for reference only</p>
+	<!--<iframe scrolling=auto width="1000px" height="1000px" src= {{ URL }}></iframe>-->
+</body>
